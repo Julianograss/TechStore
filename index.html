@@ -13,16 +13,15 @@
   <header class="header">
     <div class="header-box-1">
       <div class="logo">
-        <a href="index.html"><img src="src/res/logoTechStore.png" /></a>
+        <a href="index.html"><img src="src/res/logoTechStore.png" alt="TechStore Brasil" /></a>
       </div>
     </div>
     <div class="header-box-2">
       <div class="home"><a href="index.html">Home</a></div>
-      <div class="produtos"><a href="#">Produtos<i class="fa-solid fa-chevron-down"></i></a></div>
-      <div class="servicos"><a href="#">Serviços<i class="fa-solid fa-chevron-down"></i></a></div>
+      <div class="produtos"><a href="produtos.html">Produtos<i class="fa-solid fa-chevron-down"></i></a></div>
       <div class="sobre-carrinho">
         <a href="sobre.html"><i class="fa-regular fa-circle-question"></i></a>
-        <a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="carrinho.html" class="link-carrinho"><i class="fa-solid fa-cart-shopping"></i><span id="contador-carrinho">0</span></a>
       </div>
       <div class="botoes">
         <button class="btn-entrar"><a href="entrar.html">Entrar</a></button>
@@ -37,26 +36,25 @@
         <h5>Tudo o que você precisa relacionado a tecnologia</h5>
       </div>
       <div class="barra-busca">
-        <form action="/buscar" method="GET">
+        <form action="produtos.html" method="GET">
           <input class="campo-busca" type="search" id="campo-busca" name="q" placeholder="Digite o que procura...">
           <button class="btn-buscar" type="submit">Buscar</button>
         </form>
       </div>
       <div class="categorias">
-        <div><a href="#">Computadores</a></div>
-        <div><a href="#">Componentes</a></div>
-        <div><a href="#">Gamer</a></div>
-        <div><a href="#">Celulares e Tablets</a></div>
-        <div><a href="#">Áudio</a></div>
-        <div><a href="#">Monitores</a></div>
-        <div><a href="#">Periféricos</a></div>
-        <div><a href="#">Redes</a></div>
-        <div><a href="#">Armazenamento</a></div>
-        <div><a href="#">Cabos e Adaptadores</a></div>
-        <div><a href="#">Casa Inteligente</a></div>
-        <div><a href="#">Foto e Vídeo</a></div>
-        <div><a href="#">Energia</a></div>
-        <div><a href="#">Serviços</a></div>
+        <div><a href="produtos.html?cat=Computadores">Computadores</a></div>
+        <div><a href="produtos.html?cat=Componentes">Componentes</a></div>
+        <div><a href="produtos.html?cat=Gamer">Gamer</a></div>
+        <div><a href="produtos.html?cat=Celulares%20e%20Tablets">Celulares e Tablets</a></div>
+        <div><a href="produtos.html?cat=%C3%81udio">Áudio</a></div>
+        <div><a href="produtos.html?cat=Monitores">Monitores</a></div>
+        <div><a href="produtos.html?cat=Perif%C3%A9ricos">Periféricos</a></div>
+        <div><a href="produtos.html?cat=Redes">Redes</a></div>
+        <div><a href="produtos.html?cat=Armazenamento">Armazenamento</a></div>
+        <div><a href="produtos.html?cat=Cabos%20e%20Adaptadores">Cabos e Adaptadores</a></div>
+        <div><a href="produtos.html?cat=Casa%20Inteligente">Casa Inteligente</a></div>
+        <div><a href="produtos.html?cat=Foto%20e%20V%C3%ADdeo">Foto e Vídeo</a></div>
+        <div><a href="produtos.html?cat=Energia">Energia</a></div>
       </div>
     </header>
     <section class="section-box lancamentos">
@@ -65,7 +63,7 @@
           <h5>Produtos</h5>
           <h2>Lançamentos</h2>
         </div>
-        <button class="btn-ver-todos">
+        <button class="btn-ver-todos" onclick="location.href='produtos.html'">
           Ver Todos<i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>
@@ -95,13 +93,14 @@
 
         <button class="botao anterior" onclick="mudarSlideBanner(-1)"><i class="fa-solid fa-chevron-left"></i></button>
         <button class="botao proximo" onclick="mudarSlideBanner(1)"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
     </section>
     <section class="section-box produtos-oferta">
       <div class="mensagem-box">
         <div class="mensagem">
           <h2>Mais Populares</h2>
         </div>
-        <button class="btn-ver-todos">
+        <button class="btn-ver-todos" onclick="location.href='produtos.html'">
           Ver Todos<i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>
@@ -118,7 +117,7 @@
         <div class="mensagem">
           <h2>Recomendações</h2>
         </div>
-        <button class="btn-ver-todos">
+        <button class="btn-ver-todos" onclick="location.href='produtos.html'">
           Ver Todos<i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>
@@ -136,7 +135,7 @@
         <div class="mensagem">
           <h2>Mais Procurados</h2>
         </div>
-        <button class="btn-ver-todos">
+        <button class="btn-ver-todos" onclick="location.href='produtos.html'">
           Ver Todos<i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>
@@ -155,7 +154,7 @@
         <div class="mensagem">
           <h2>Novidades</h2>
         </div>
-        <button class="btn-ver-todos">
+        <button class="btn-ver-todos" onclick="location.href='produtos.html'">
           Ver Todos<i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>
@@ -190,11 +189,11 @@
       <div class="footer-coluna">
         <h3>Categorias</h3>
         <ul>
-          <li><a href="#">Computadores</a></li>
-          <li><a href="#">Componentes</a></li>
-          <li><a href="#">Periféricos</a></li>
-          <li><a href="#">Monitores</a></li>
-          <li><a href="#">Gamer</a></li>
+          <li><a href="produtos.html?cat=Computadores">Computadores</a></li>
+          <li><a href="produtos.html?cat=Componentes">Componentes</a></li>
+          <li><a href="produtos.html?cat=Perif%C3%A9ricos">Periféricos</a></li>
+          <li><a href="produtos.html?cat=Monitores">Monitores</a></li>
+          <li><a href="produtos.html?cat=Gamer">Gamer</a></li>
         </ul>
       </div>
 
@@ -235,7 +234,12 @@
       <p>&copy; 2026 TechStore Brasil. Todos os direitos reservados.</p>
     </div>
   </footer>
-  <script src="src/script.js"></script>
+<script src="src/js/ui.js"></script>
+  <script src="src/js/dados.js"></script>
+  <script src="src/js/produtos.js"></script>
+  <script src="src/js/carrinho.js"></script>
+  <script src="src/js/auth.js"></script>
+  <script src="src/js/main.js"></script>
 </body>
 
 </html>

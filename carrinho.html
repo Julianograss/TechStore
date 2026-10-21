@@ -14,16 +14,15 @@
     <header class="header">
       <div class="header-box-1">
         <div class="logo">
-          <a href="index.html"><img src="src/res/logoTechStore.png" /></a>
+          <a href="index.html"><img src="src/res/logoTechStore.png" alt="TechStore Brasil" /></a>
         </div>
       </div>
       <div class="header-box-2">
         <div class="home"><a href="index.html">Home</a></div>
-        <div class="produtos"><a href="#">Produtos<i class="fa-solid fa-chevron-down"></i></a></div>
-        <div class="servicos"><a href="#">Serviços<i class="fa-solid fa-chevron-down"></i></a></div>
+        <div class="produtos"><a href="produtos.html">Produtos<i class="fa-solid fa-chevron-down"></i></a></div>
         <div class="sobre-carrinho">
           <a href="sobre.html"><i class="fa-regular fa-circle-question"></i></a>
-          <a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="carrinho.html" class="link-carrinho"><i class="fa-solid fa-cart-shopping"></i><span id="contador-carrinho">0</span></a>
         </div>
         <div class="botoes">
           <button class="btn-entrar"><a href="entrar.html">Entrar</a></button>
@@ -39,6 +38,11 @@
       <div class="tabela-produtos"></div>
       <div class="footer-carrinho"></div>
     </main>
-    <script src="src/script.js"></script>
+<script src="src/js/ui.js"></script>
+  <script src="src/js/dados.js"></script>
+  <script src="src/js/produtos.js"></script>
+  <script src="src/js/carrinho.js"></script>
+  <script src="src/js/auth.js"></script>
+  <script src="src/js/main.js"></script>
 </body>
 </html>

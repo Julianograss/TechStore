@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produtos - TechStore Brasil</title>
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-box-1">
+      <div class="logo">
+        <a href="index.html"><img src="src/res/logoTechStore.png" alt="TechStore Brasil" /></a>
+      </div>
+    </div>
+    <div class="header-box-2">
+      <div class="home"><a href="index.html">Home</a></div>
+      <div class="produtos"><a href="produtos.html">Produtos<i class="fa-solid fa-chevron-down"></i></a></div>
+      <div class="sobre-carrinho">
+        <a href="sobre.html"><i class="fa-regular fa-circle-question"></i></a>
+        <a href="carrinho.html" class="link-carrinho"><i class="fa-solid fa-cart-shopping"></i><span id="contador-carrinho">0</span></a>
+      </div>
+      <div class="botoes">
+        <button class="btn-entrar"><a href="entrar.html">Entrar</a></button>
+        <button class="btn-criar-conta"><a href="criarConta.html">Criar Conta</a></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="listagem">
+      <form action="produtos.html" method="GET">
+        <input class="campo-busca" type="search" id="campo-busca" name="q" placeholder="Digite o que procura...">
+        <button class="btn-buscar" type="submit">Buscar</button>
+      </form>
+      <div class="filtro-categorias" id="filtro-categorias"></div>
+      <h2 id="titulo-listagem"></h2>
+      <p id="contagem-listagem"></p>
+      <div class="grade-listagem" id="grade-produtos"></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-coluna">
+        <img src="src/res/logoTechStore.png" alt="TechStore Brasil" class="footer-logo">
+        <p>
+          A TechStore Brasil oferece produtos de tecnologia com qualidade,
+          segurança e os melhores preços para você.
+        </p>
+      </div>
+
+      <div class="footer-coluna">
+        <h3>Categorias</h3>
+        <ul>
+          <li><a href="produtos.html?cat=Computadores">Computadores</a></li>
+          <li><a href="produtos.html?cat=Componentes">Componentes</a></li>
+          <li><a href="produtos.html?cat=Perif%C3%A9ricos">Periféricos</a></li>
+          <li><a href="produtos.html?cat=Monitores">Monitores</a></li>
+          <li><a href="produtos.html?cat=Gamer">Gamer</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-coluna">
+        <h3>Atendimento</h3>
+        <ul>
+          <li><a href="#">Central de Ajuda</a></li>
+          <li><a href="#">Trocas e Devoluções</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+        </ul>
+      </div>
+      <div class="footer-coluna">
+        <h3>Contato</h3>
+        <p>
+          <i class="fa-solid fa-location-dot"></i>
+          Santo Ângelo - RS
+        </p>
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          (51) 99999-9999
+        </p>
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          contato@techstore.com.br
+        </p>
+        <div class="footer-redes">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TechStore Brasil. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+<script src="src/js/ui.js"></script>
+  <script src="src/js/dados.js"></script>
+  <script src="src/js/produtos.js"></script>
+  <script src="src/js/carrinho.js"></script>
+  <script src="src/js/auth.js"></script>
+  <script src="src/js/main.js"></script>
+</body>
+</html>
